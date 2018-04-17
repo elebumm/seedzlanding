@@ -1311,7 +1311,7 @@ ul.download-list li a i {
 	left: -2px;
 	padding: 2px;
 	z-index: -1;
-	background: #fff;
+	background: #f2f7f8;
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
 	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
@@ -1385,7 +1385,7 @@ ul.download-list li a i {
 	left: -2px;
 	padding: 2px;
 	z-index: -1;
-	background: #fff;
+	background: #f2f7f8;
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
 	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
