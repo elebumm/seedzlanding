@@ -87,6 +87,11 @@ $(window).on('load', function(){
 		
 		var full_url = this.href;
 		var parts = full_url.split("#");
+		// Don't know why this was giving me such trouble lol but basically makes it so you can go to a link if it's not on the same page.
+		if (parts.length < 2) {
+			window.location.href = parts[0];
+		}
+		
 		var trgt = parts[1];
 		var target_offset = $("#"+trgt).offset();
 		var target_top = target_offset.top;

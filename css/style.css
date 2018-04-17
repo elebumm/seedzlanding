@@ -398,6 +398,7 @@ iframe {
 	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
+	transform: scale(2);
 }
 
 #navbar-collapse-02 li.selected a{
@@ -1699,11 +1700,11 @@ ul.download-list li a i {
 
 }
 
-
-
-
-
 .download-text {
 	font-weight: 700;
 	font-size: 1.6em;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: black !important;
 }
