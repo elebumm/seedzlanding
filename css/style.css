@@ -54,6 +54,10 @@ ul li i{
 	vertical-align: middle;
 }
 
+i {
+	color: #3081B5 !important;
+}
+
 p {
 	font-size: 15px;
 	line-height: 24px;
@@ -1270,7 +1274,7 @@ ul.download-list li a i {
 }
 
 .hi-icon-left:after {
-	border: 1px solid #4285f4;
+	border: 1px solid #3081B5;
 	border-radius: 35% 35% 0 35%;
 	pointer-events: none;
 	position: absolute;
@@ -1288,8 +1292,8 @@ ul.download-list li a i {
 /* Effect 2 */
 .hi-icon-effect-2 .hi-icon-left {
 	color: #4285f4;
-	box-shadow: 0 0 0 1px #4285f4;
-	background: #4285f4;
+	box-shadow: 0 0 0 1px #3081B5;
+	background: #3081B5;
 	-webkit-transition: all 0.6s ease-in-out;
 	-moz-transition: all 0.6s ease-in-out;
 	transition: all 0.6s ease-in-out;
@@ -1344,7 +1348,7 @@ ul.download-list li a i {
 }
 
 .hi-icon-right:after {
-	border: 1px solid #4285f4;
+	border: 1px solid #3081B5;
 	border-radius: 35% 35% 35% 0;
 	pointer-events: none;
 	position: absolute;
