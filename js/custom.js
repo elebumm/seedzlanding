@@ -1,12 +1,12 @@
 $(window).on('load', function(){
 
 	"use strict";
- 
-	
+
+
 	/* ========================================================== */
 	/*   Owl Carousel                                             */
 	/* ========================================================== */
-	
+
 	$('#owl1').owlCarousel({
 	    loop:true,
 	    margin:10,
@@ -47,11 +47,11 @@ $(window).on('load', function(){
 	        }
 	    }
 	})
- 
+
 	/* ========================================================== */
 	/*   Navigation Background Color                              */
 	/* ========================================================== */
-	
+
 	$(window).on('scroll', function() {
 		if($(this).scrollTop() > 100) {
 			$('.navbar-fixed-top').addClass('opaque');
@@ -59,21 +59,21 @@ $(window).on('load', function(){
 			$('.navbar-fixed-top').removeClass('opaque');
 		}
 	});
- 
-	
+
+
 	/* ========================================================== */
 	/*   Hide Responsive Navigation On-Click                      */
 	/* ========================================================== */
-	
+
 	  $(".navbar-nav li a").on('click', function(event) {
 	    $(".navbar-collapse").collapse('hide');
 	  });
 
-	
+
 	/* ========================================================== */
 	/*   Navigation Color                                         */
 	/* ========================================================== */
-	
+
 	$('#navbar-collapse-02').onePageNav({
 		filter: ':not(.external)'
 	});
@@ -82,52 +82,36 @@ $(window).on('load', function(){
 	/* ========================================================== */
 	/*   SmoothScroll                                             */
 	/* ========================================================== */
-	
+
 	$(".nav li a, a.scrool").on('click', function(e) {
-		
+
 		var full_url = this.href;
 		var parts = full_url.split("#");
 		// Don't know why this was giving me such trouble lol but basically makes it so you can go to a link if it's not on the same page.
 		if (parts.length < 2) {
 			window.location.href = parts[0];
 		}
-		
+
 		var trgt = parts[1];
 		var target_offset = $("#"+trgt).offset();
 		var target_top = target_offset.top;
-		
+
 		$('html,body').animate({scrollTop:target_top -70}, 1000);
 			return false;
-		
+
 	});
 
 
 	/* ========================================================== */
 	/*   Newsletter                                               */
 	/* ========================================================== */
-	
-	$('.newsletter_box .newsletter_form').each( function(){
-		var form = $(this);
-		//form.validate();
-		form.submit(function(e) {
-			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'email':$('input[name="nf_email"]').val(),
-				},function(data){
-					form.fadeOut('fast', function() {
-						$(this).siblings('p.newsletter_success_box').show();
-					});
-				});
-				e.preventDefault();
-			}
-		});
-	});	
-	
+
+
 
 	/* ========================================================== */
 	/*   Register                                                 */
 	/* ========================================================== */
-	
+
 	$('#register-form').each( function(){
 		var form = $(this);
 		//form.validate();
@@ -147,8 +131,8 @@ $(window).on('load', function(){
 			}
 		});
 	})
-	
-	
+
+
 	/* ========================================================== */
 	/*   Contact                                                  */
 	/* ========================================================== */
@@ -173,7 +157,7 @@ $(window).on('load', function(){
 		});
 	})
 
-	
+
 });
 
 
@@ -185,26 +169,25 @@ $(window).on('load', function(){
 		gallery: {
 		  enabled:true
 		}
-	}); 
-	
+	});
+
 	$('.popup-gallery').find('a.popup2').magnificPopup({
 		type: 'image',
 		gallery: {
 		  enabled:true
 		}
-	}); 
- 
+	});
+
 	$('.popup-gallery').find('a.popup3').magnificPopup({
 		type: 'image',
 		gallery: {
 		  enabled:true
 		}
-	}); 
- 
+	});
+
 	$('.popup-gallery').find('a.popup4').magnificPopup({
 		type: 'iframe',
 		gallery: {
 		  enabled:false
 		}
-	});  
- 
+	});
