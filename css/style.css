@@ -186,11 +186,11 @@ iframe {
 }
 
 .section-gradient{
-	background: #008aff; /* For browsers that do not support gradients */
-  	background: -webkit-linear-gradient(left top, #3081B5, #5EB9CE); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #3081B5, #5EB9CE); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #3081B5, #5EB9CE); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #3081B5, #5EB9CE); /* Standard syntax */
+	background: #6AB745; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left top, #6AB745, #abd695); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #6AB745, #abd695); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #6AB745, #abd695); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #6AB745, #abd695); /* Standard syntax */
   	padding: 70px 0;
 }
 
@@ -477,17 +477,19 @@ iframe {
 	color: #4285f4!important;
 	background: #ffffff;
 }
-
+.opacity-0 {
+	opacity: 0 !important;
+}
 /* ========================================================== */
 /* 			               03. HOME                           */
 /* ========================================================== */
 
 .home-section {
-	background: #008aff; /* For browsers that do not support gradients */
-  	background: -webkit-linear-gradient(left top, #3081B5, #5EB9CE); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #3081B5, #5EB9CE); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #3081B5, #5EB9CE); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #3081B5, #5EB9CE); /* Standard syntax */
+	background: #6AB745; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left top, #6AB745, #6AB745); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #6AB745, #6AB745); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #6AB745, #6AB745); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #6AB745, #6AB745); /* Standard syntax */
   	padding-top: 125px;
   	padding-bottom: 50px;
 }
@@ -660,6 +662,7 @@ ul.features-responsive li i {
 .feature-wrapper{
 	overflow: hidden;
 	margin: 30px 0;
+	height:100px;
 }
 
 .feature-wrapper i.lefts{
